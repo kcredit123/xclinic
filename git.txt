@@ -1,0 +1,19 @@
+git config --global user.name "kcredit123"
+git config --global user.email "kcredit123@gmail.com"
+git init
+git remote add origin https://github.com/kcredit123/xclinic.git
+git add .
+git commit -m "update files"
+
+
+
+
+npm install gh-pages --save-dev
+
+package json
+"scripts": {
+  "predeploy": "npm run build",
+  "deploy": "gh-pages -d dist"
+}
+
+npm run deploy
